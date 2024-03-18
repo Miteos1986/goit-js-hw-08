@@ -85,7 +85,7 @@ const images = [
     }
     list.addEventListener("click", galleryClick);
     function galleryClick(event) {
-        if (event.target === event.currentTarget){
+        if (event.target.nodeName !== "IMG"){
             return
         }
        
@@ -97,13 +97,12 @@ const modalSize = event.target.dataset.source
     <div class="modal">
       
     <img
-      class="gallery-image"
-            data-source="${modalSize}"
-      alt="${image.description}"
-      width = "1112"
+      
+      src="${modalSize}"
+     width = "1112"
     />
   `)
-    // console.log(window);
+    console.log(window);
 
 instance.show();
     }

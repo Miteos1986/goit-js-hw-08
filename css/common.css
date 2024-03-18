@@ -2,9 +2,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    
-  }
+ 
   ul {
     display: flex;
     justify-content: row;
